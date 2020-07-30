@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+body {
+    background: url(../images/background1.jpg) no-repeat center/cover;
+    /* background-size: 100% 100%; */
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: orange;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.container a {
+    font-size: 50px;
+    font-weight: 700;
+    color: orange;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.container a:hover {
+    transform: scale(1.2);
+    color: rgb(255, 115, 0);
+}
+
+.form_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.form_input .containt {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/background2.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.modal-window {
+    position: absolute;
+    top: calc(50% - 160px);
+    left: calc(50% - 160px);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 87px 30px;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    background: #ffd104;
+    transition: 1s;
+}
+
+.input {
+    font-size: 20px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 700;
+    color: #000000;
+    box-shadow: 0 0 5px #ff9100;
+    cursor: pointer;
+    background: #ff9100;
+    border: none;
+}
+
+.button:hover {
+    background: #f8a63c;
+    box-shadow: 0 0 10px #f8a63c;
+}
+
+.hidden {
+    position: absolute;
+    transition: 1s;
+    top: -400px;
+    left: -400px;
+}
+
+.red {
+    color: #75db56;
+}
+
+@media (max-width: 500px) {
+    .form_input .containt {
+        padding-top: 50px;
+    }
+
+    .container h1 {
+        font-size: 40px;
+    }
+}
